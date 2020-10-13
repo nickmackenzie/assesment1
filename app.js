@@ -19,7 +19,7 @@ function mathFunction(e) {
         total.innerText = initialValue
         total.style.color = "black"
     }
-    if (e.target.id === "minus" && initialValue >= 0) {
+    if (e.target.id === "minus" && initialValue > 0) {
         initialValue = Number(initialValue) - Number(inputBox.value);
         total.innerText = initialValue
         total.style.color = "black"
@@ -30,7 +30,7 @@ function mathFunction(e) {
         total.innerText = initialValue
         total.style.color = "red"
     }
-    if (e.target.id === "minus" && initialValue < 0) {
+    if (e.target.id === "minus") {
         initialValue = Number(initialValue) - Number(inputBox.value);
         total.innerText = initialValue
         total.style.color = "red"
